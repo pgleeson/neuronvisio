@@ -121,37 +121,42 @@
 python-setuptools python-tables python-mayavi</pre>
 </div>
 <p>If you are running a different flavour of GNU/Linux, like Fedora for example, just install
-the requirements with your package manager, then go to the <a class="reference internal" href="#package-install">Package Install</a>.</p>
+the requirements with your package manager.</p>
+<p>Next, see the instructions on installation of NEURON with Python availabe at
+<a class="reference external" href="http://www.davison.webfactional.com/notes/installation-neuron-python/">http://www.davison.webfactional.com/notes/installation-neuron-python/</a>.</p>
+<p>Proceed to the <a class="reference internal" href="#package-install">Package Install</a> .</p>
 </div>
 <div class="section" id="mac-os-x">
 <h3>Mac OS X<a class="headerlink" href="#mac-os-x" title="Permalink to this headline">¶</a></h3>
-<p>Install the <a class="reference external" href="http://www.riverbankcomputing.co.uk/software/pyqt/download">PyQt4</a></p>
-<p>To get ipython, mayavi and matplotlib it&#8217;s higly suggested to get a
-prepackaged scientific python distribution</p>
-<p>Some pointers:</p>
+<p>Under Mac it is recommended to get a prepackaged scientific python distribution
+which contains most of neuronvisio&#8217;s dependencies, such as:</p>
 <ul class="simple">
-<li>Enthought Distribution: <a class="reference external" href="http://www.enthought.com/products/epd.php">http://www.enthought.com/products/epd.php</a></li>
-<li>Scipy SuperPack: <a class="reference external" href="http://macinscience.org/?page_id=6">http://macinscience.org/?page_id=6</a></li>
+<li>Enthought Distribution: <a class="reference external" href="http://www.enthought.com/products/epd.php">http://www.enthought.com/products/epd.php</a> (free for an
+academic use)</li>
 </ul>
-<p>The last one is maybe missing mayavi2. you can automatically installing it
-following the <a class="reference internal" href="#package-install">Package Install</a>.</p>
+<p>Alternatively, if you want to do it yourself, you should look at the following:</p>
+<ul class="simple">
+<li>Scipy SuperPack: <a class="reference external" href="http://fonnesbeck.github.com/ScipySuperpack/">http://fonnesbeck.github.com/ScipySuperpack/</a></li>
+<li>PyQt4: <a class="reference external" href="http://www.riverbankcomputing.co.uk/software/pyqt/download">http://www.riverbankcomputing.co.uk/software/pyqt/download</a></li>
+</ul>
+<p>Next, see the instructions on installation of NEURON with Python availabe at
+<a class="reference external" href="http://www.davison.webfactional.com/notes/installation-neuron-python/">http://www.davison.webfactional.com/notes/installation-neuron-python/</a>.</p>
+<p>Proceed to the <a class="reference internal" href="#package-install">Package Install</a> .</p>
 </div>
 <div class="section" id="windows">
 <h3>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h3>
-<p>You need to install</p>
+<p>Under Windows it is recommended to get a prepackaged scientific python distribution
+which contains most of neuronvisio&#8217;s dependencies, such as:</p>
 <ul class="simple">
-<li>PyQt4:  <a class="reference external" href="http://www.riverbankcomputing.co.uk/software/pyqt/download">http://www.riverbankcomputing.co.uk/software/pyqt/download</a></li>
+<li>Enthought Distribution: <a class="reference external" href="http://www.enthought.com/products/epd.php">http://www.enthought.com/products/epd.php</a> (free for an
+academic use)</li>
+<li>Python(x,y): <a class="reference external" href="http://www.pythonxy.com/foreword.php">http://www.pythonxy.com/foreword.php</a> (free)</li>
 </ul>
-<p>Some pointers as for MAC:</p>
-<ul class="simple">
-<li>Enthought Distribution: <a class="reference external" href="http://www.enthought.com/products/epd.php">http://www.enthought.com/products/epd.php</a></li>
-<li>Python(x,y): <a class="reference external" href="http://www.pythonxy.com/foreword.php">http://www.pythonxy.com/foreword.php</a></li>
-</ul>
-<p>The last one is maybe missing mayavi2. Follow the instruction on
-<cite>mayavi doc_</cite> to install it</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">A portable and already compiled version of NEURON is available at <a class="reference external" href="https://bitbucket.org/uric/pyneuron/">https://bitbucket.org/uric/pyneuron/</a></p>
+<p>Alternatively, if you want to do it yourself, you will need to manually install
+and configure the dependencies listed in <a class="reference internal" href="#requirements">Requirements</a></p>
+<p>A portable and already compiled version of NEURON for Python is available
+from <a class="reference external" href="https://bitbucket.org/uric/pyneuron/">https://bitbucket.org/uric/pyneuron/</a> or simply by using:</p>
+<div class="highlight-python"><pre>pip install PyNEURON</pre>
 </div>
 <p>Proceed to the <a class="reference internal" href="#package-install">Package Install</a> .</p>
 </div>
@@ -217,7 +222,7 @@ management tool</p>
     </div>
     <div class="footer">
         &copy; Copyright 2009 -2012, Michele Mattioni.
-      Last updated on Feb 15, 2012.
+      Last updated on Feb 16, 2012.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.2.
     </div>
   </body>
