@@ -108,18 +108,18 @@ the functionality was added at later stage. We decided to keep them,
 you the time of the <a class="reference external" href="http://www.neuron.yale.edu/neuron/">NEURON</a> simulator.</p>
 <p>You can change the <cite>tstop</cite>, the <cite>dt</cite> and the initial voltage from the GUI or
 the console.</p>
-<img alt="images/Neuronvisio_Controls_Init_and_Run1.png" src="images/Neuronvisio_Controls_Init_and_Run1.png" />
+<img alt="images/Neuronvisio_Controls_Init_and_Run2.png" src="images/Neuronvisio_Controls_Init_and_Run2.png" />
 </div>
 <div class="section" id="dimensions-with-a-simple-model">
 <h2>3-Dimensions with a simple model<a class="headerlink" href="#dimensions-with-a-simple-model" title="Permalink to this headline">¶</a></h2>
 <p>Rendering of a simple model with 3 section.</p>
-<img alt="images/Simple_model1.png" src="images/Simple_model1.png" />
+<img alt="images/Simple_model2.png" src="images/Simple_model2.png" />
 <p>The neurons is rendered using the Mayavi pipeline, where is possibile to choose
 from different colormap and additional filters.
 Using the <cite>GnBu</cite> colormap with the Axes.</p>
-<a class="reference internal image-reference" href="images/nrnvisio-mayavi-color1.png"><img alt="images/nrnvisio-mayavi-color1.png" src="images/nrnvisio-mayavi-color1.png" style="width: 784.0px; height: 645.4px;" /></a>
+<a class="reference internal image-reference" href="images/nrnvisio-mayavi-color3.png"><img alt="images/nrnvisio-mayavi-color3.png" src="images/nrnvisio-mayavi-color3.png" style="width: 784.0px; height: 645.4px;" /></a>
 <p>Using the <cite>red-blue</cite> colormap with the Axes.</p>
-<a class="reference internal image-reference" href="images/nrnvisio-mayavi-color21.png"><img alt="images/nrnvisio-mayavi-color21.png" src="images/nrnvisio-mayavi-color21.png" style="width: 774.9px; height: 644.7px;" /></a>
+<a class="reference internal image-reference" href="images/nrnvisio-mayavi-color22.png"><img alt="images/nrnvisio-mayavi-color22.png" src="images/nrnvisio-mayavi-color22.png" style="width: 774.9px; height: 644.7px;" /></a>
 </div>
 <div class="section" id="dimensions-with-a-complex-model">
 <h2>3-Dimensions with a complex model<a class="headerlink" href="#dimensions-with-a-complex-model" title="Permalink to this headline">¶</a></h2>
@@ -139,20 +139,20 @@ a pyramidal one.</p>
 <h3>Simple model<a class="headerlink" href="#simple-model" title="Permalink to this headline">¶</a></h3>
 <p>A simple 3 sections model showing the different value of the voltage in the
 cell.</p>
-<a class="reference internal image-reference" href="images/voltage_variation_among_time1.png"><img alt="images/voltage_variation_among_time1.png" src="images/voltage_variation_among_time1.png" style="width: 652.4px; height: 492.1px;" /></a>
+<a class="reference internal image-reference" href="images/voltage_variation_among_time2.png"><img alt="images/voltage_variation_among_time2.png" src="images/voltage_variation_among_time2.png" style="width: 652.4px; height: 492.1px;" /></a>
 </div>
 <div class="section" id="pyramidal-neuron">
 <h3>Pyramidal neuron<a class="headerlink" href="#pyramidal-neuron" title="Permalink to this headline">¶</a></h3>
 <p>The propagation of the voltage among the neuron. The stimul was given in the
 soma.</p>
-<a class="reference internal image-reference" href="images/pyramidal_3D_change_voltage1.png"><img alt="images/pyramidal_3D_change_voltage1.png" src="images/pyramidal_3D_change_voltage1.png" style="width: 711.2px; height: 521.5px;" /></a>
+<a class="reference internal image-reference" href="images/pyramidal_3D_change_voltage2.png"><img alt="images/pyramidal_3D_change_voltage2.png" src="images/pyramidal_3D_change_voltage2.png" style="width: 711.2px; height: 521.5px;" /></a>
 </div>
 <div class="section" id="pylab-integration">
 <h3>Pylab integration<a class="headerlink" href="#pylab-integration" title="Permalink to this headline">¶</a></h3>
 <p>It is possible to use the standard pylab tool and to plot the timecourses in
 the current figure, or create a new one just selecting another output figure
 number.</p>
-<a class="reference internal image-reference" href="images/pylab_integration1.png"><img alt="images/pylab_integration1.png" src="images/pylab_integration1.png" style="width: 662.2px; height: 609.7px;" /></a>
+<a class="reference internal image-reference" href="images/pylab_integration2.png"><img alt="images/pylab_integration2.png" src="images/pylab_integration2.png" style="width: 662.2px; height: 609.7px;" /></a>
 </div>
 </div>
 <div class="section" id="making-a-movie">
@@ -165,6 +165,8 @@ number.</p>
 To stack them in a movie, you can use ffmpeg with the following command:</p>
 <div class="highlight-python"><pre>ffmpeg -f image2 -r 10 -i %09d.png -sameq anim.mov -pass 2</pre>
 </div>
+<p>One of the example video, using the pyrimidal neuron can be seen here:
+<a class="reference external" href="http://www.youtube.com/watch?v=LOuptLKZ5rU">http://www.youtube.com/watch?v=LOuptLKZ5rU</a></p>
 </div>
 </div>
 

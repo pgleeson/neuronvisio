@@ -103,4 +103,7 @@ To stack them in a movie, you can use ffmpeg with the following command::
 
     ffmpeg -f image2 -r 10 -i %09d.png -sameq anim.mov -pass 2
     
+One of the example video, using the pyrimidal neuron can be seen here: 
+http://www.youtube.com/watch?v=LOuptLKZ5rU
+    
     
