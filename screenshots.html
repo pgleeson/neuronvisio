@@ -53,12 +53,13 @@
 <li><a class="reference internal" href="#gui-control">GUI control</a></li>
 <li><a class="reference internal" href="#dimensions-with-a-simple-model">3-Dimensions with a simple model</a></li>
 <li><a class="reference internal" href="#dimensions-with-a-complex-model">3-Dimensions with a complex model</a></li>
-<li><a class="reference internal" href="#animation-and-pylab-graphs">Animation and pylab graphs</a><ul>
+<li><a class="reference internal" href="#timecourse-movie-and-pylab-graphs">Timecourse movie and pylab graphs</a><ul>
 <li><a class="reference internal" href="#simple-model">Simple model</a></li>
 <li><a class="reference internal" href="#pyramidal-neuron">Pyramidal neuron</a></li>
 <li><a class="reference internal" href="#pylab-integration">Pylab integration</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#making-a-movie">Making a movie</a></li>
 </ul>
 </li>
 </ul>
@@ -107,26 +108,26 @@ the functionality was added at later stage. We decided to keep them,
 you the time of the <a class="reference external" href="http://www.neuron.yale.edu/neuron/">NEURON</a> simulator.</p>
 <p>You can change the <cite>tstop</cite>, the <cite>dt</cite> and the initial voltage from the GUI or
 the console.</p>
-<img alt="images/Neuronvisio_Controls_Init_and_Run.png" src="images/Neuronvisio_Controls_Init_and_Run.png" />
+<img alt="images/Neuronvisio_Controls_Init_and_Run1.png" src="images/Neuronvisio_Controls_Init_and_Run1.png" />
 </div>
 <div class="section" id="dimensions-with-a-simple-model">
 <h2>3-Dimensions with a simple model<a class="headerlink" href="#dimensions-with-a-simple-model" title="Permalink to this headline">¶</a></h2>
 <p>Rendering of a simple model with 3 section.</p>
-<img alt="images/Simple_model.png" src="images/Simple_model.png" />
+<img alt="images/Simple_model1.png" src="images/Simple_model1.png" />
 <p>The neurons is rendered using the Mayavi pipeline, where is possibile to choose
 from different colormap and additional filters.
 Using the <cite>GnBu</cite> colormap with the Axes.</p>
-<a class="reference internal image-reference" href="images/nrnvisio-mayavi-color.png"><img alt="images/nrnvisio-mayavi-color.png" src="images/nrnvisio-mayavi-color.png" style="width: 784.0px; height: 645.4px;" /></a>
+<a class="reference internal image-reference" href="images/nrnvisio-mayavi-color1.png"><img alt="images/nrnvisio-mayavi-color1.png" src="images/nrnvisio-mayavi-color1.png" style="width: 784.0px; height: 645.4px;" /></a>
 <p>Using the <cite>red-blue</cite> colormap with the Axes.</p>
-<a class="reference internal image-reference" href="images/nrnvisio-mayavi-color2.png"><img alt="images/nrnvisio-mayavi-color2.png" src="images/nrnvisio-mayavi-color2.png" style="width: 774.9px; height: 644.7px;" /></a>
+<a class="reference internal image-reference" href="images/nrnvisio-mayavi-color21.png"><img alt="images/nrnvisio-mayavi-color21.png" src="images/nrnvisio-mayavi-color21.png" style="width: 774.9px; height: 644.7px;" /></a>
 </div>
 <div class="section" id="dimensions-with-a-complex-model">
 <h2>3-Dimensions with a complex model<a class="headerlink" href="#dimensions-with-a-complex-model" title="Permalink to this headline">¶</a></h2>
 <p>Rendering of a more complex model, a pyramidal neuron.</p>
 <a class="reference internal image-reference" href="images/Neuronvisio_3D.png"><img alt="images/Neuronvisio_3D.png" src="images/Neuronvisio_3D.png" style="width: 518.7px; height: 464.8px;" /></a>
 </div>
-<div class="section" id="animation-and-pylab-graphs">
-<h2>Animation and pylab graphs<a class="headerlink" href="#animation-and-pylab-graphs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="timecourse-movie-and-pylab-graphs">
+<h2>Timecourse movie and pylab graphs<a class="headerlink" href="#timecourse-movie-and-pylab-graphs" title="Permalink to this headline">¶</a></h2>
 <p>It is possible to follow the timecourse of a variable in the whole neuron or
 networks using the bottom slider, after the simulation has been ran,
 or reloaded. If a particular point in time is of interest, insert in the
@@ -138,20 +139,31 @@ a pyramidal one.</p>
 <h3>Simple model<a class="headerlink" href="#simple-model" title="Permalink to this headline">¶</a></h3>
 <p>A simple 3 sections model showing the different value of the voltage in the
 cell.</p>
-<a class="reference internal image-reference" href="images/voltage_variation_among_time.png"><img alt="images/voltage_variation_among_time.png" src="images/voltage_variation_among_time.png" style="width: 652.4px; height: 492.1px;" /></a>
+<a class="reference internal image-reference" href="images/voltage_variation_among_time1.png"><img alt="images/voltage_variation_among_time1.png" src="images/voltage_variation_among_time1.png" style="width: 652.4px; height: 492.1px;" /></a>
 </div>
 <div class="section" id="pyramidal-neuron">
 <h3>Pyramidal neuron<a class="headerlink" href="#pyramidal-neuron" title="Permalink to this headline">¶</a></h3>
 <p>The propagation of the voltage among the neuron. The stimul was given in the
 soma.</p>
-<a class="reference internal image-reference" href="images/pyramidal_3D_change_voltage.png"><img alt="images/pyramidal_3D_change_voltage.png" src="images/pyramidal_3D_change_voltage.png" style="width: 711.2px; height: 521.5px;" /></a>
+<a class="reference internal image-reference" href="images/pyramidal_3D_change_voltage1.png"><img alt="images/pyramidal_3D_change_voltage1.png" src="images/pyramidal_3D_change_voltage1.png" style="width: 711.2px; height: 521.5px;" /></a>
 </div>
 <div class="section" id="pylab-integration">
 <h3>Pylab integration<a class="headerlink" href="#pylab-integration" title="Permalink to this headline">¶</a></h3>
 <p>It is possible to use the standard pylab tool and to plot the timecourses in
 the current figure, or create a new one just selecting another output figure
 number.</p>
-<a class="reference internal image-reference" href="images/pylab_integration.png"><img alt="images/pylab_integration.png" src="images/pylab_integration.png" style="width: 662.2px; height: 609.7px;" /></a>
+<a class="reference internal image-reference" href="images/pylab_integration1.png"><img alt="images/pylab_integration1.png" src="images/pylab_integration1.png" style="width: 662.2px; height: 609.7px;" /></a>
+</div>
+</div>
+<div class="section" id="making-a-movie">
+<h2>Making a movie<a class="headerlink" href="#making-a-movie" title="Permalink to this headline">¶</a></h2>
+<p>To make a movie it is possible to call the function:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">controls</span><span class="o">.</span><span class="n">make_animation_screenshots</span><span class="p">(</span><span class="n">time_start</span><span class="p">,</span> <span class="n">time_stop</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>which will save all the screenshots in brand new directory (default is anim).
+To stack them in a movie, you can use ffmpeg with the following command:</p>
+<div class="highlight-python"><pre>ffmpeg -f image2 -r 10 -i %09d.png -sameq anim.mov -pass 2</pre>
 </div>
 </div>
 </div>
@@ -182,7 +194,7 @@ number.</p>
     </div>
     <div class="footer">
         &copy; Copyright 2009 -2012, Michele Mattioni.
-      Last updated on Mar 14, 2012.
+      Last updated on Mar 18, 2012.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
     </div>
   </body>
