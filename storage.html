@@ -10,8 +10,8 @@
     
     <title>Saving and loading simulations’ reults &mdash; Neuronvisio 0.8.1.dev documentation</title>
     
-    <link rel="stylesheet" href="static/sphinxdoc.css" type="text/css" />
-    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,9 +22,9 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="static/jquery.js"></script>
-    <script type="text/javascript" src="static/underscore.js"></script>
-    <script type="text/javascript" src="static/doctools.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Neuronvisio 0.8.1.dev documentation" href="index.html" />
     <link rel="next" title="Screenshots" href="screenshots.html" />
     <link rel="prev" title="Getting Started" href="gettingstarted.html" /> 
@@ -71,7 +71,7 @@
                         title="next chapter">Screenshots</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="sources/storage.txt"
+    <li><a href="_sources/storage.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -102,7 +102,7 @@
 <p>Neuronvisio stores simulation&#8217;s results using the <a class="reference external" href="http://www.hdfgroup.org/">hdf</a> standard, using <a class="reference external" href="http://www.pytables.org">PyTables</a>  This is very handy
 when you simulation takes a long time to run and you want to inspect again the results,
 without re-run it.</p>
-<p>The file has a structure shown in the following images</p>
+<p>The file has a structure shown in the following _static</p>
 <a class="reference internal image-reference" href="_images/hdf_neuronvisio_structure.png"><img alt="_images/hdf_neuronvisio_structure.png" src="_images/hdf_neuronvisio_structure.png" style="width: 807.9px; height: 302.7px;" /></a>
 <p>The Refs is the data structure used by Neuronvisio. The <cite>VecRef</cite> is the specialized one. It is possible to add more
 Ref subclassing the <tt class="xref py py-class docutils literal"><span class="pre">manager.BaseRef</span></tt>.</p>
