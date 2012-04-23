@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>neuronvisio.visio – 3D Visual operations &mdash; Neuronvisio 0.8.1 documentation</title>
+    <title>neuronvisio.visio – 3D Visual operations &mdash; Neuronvisio 0.8.2 documentation</title>
     
     <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -16,7 +16,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '',
-        VERSION:     '0.8.1',
+        VERSION:     '0.8.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Neuronvisio 0.8.1 documentation" href="index.html" />
+    <link rel="top" title="Neuronvisio 0.8.2 documentation" href="index.html" />
     <link rel="up" title="Reference" href="reference.html" />
     <link rel="next" title="neuronvisio.controls – User Interface module" href="controls.html" />
     <link rel="prev" title="neuronvisio.manager – Manage the map between vectors and sections" href="manager.html" /> 
@@ -46,7 +46,7 @@
         <li class="right" >
           <a href="manager.html" title="neuronvisio.manager – Manage the map between vectors and sections"
              accesskey="P">previous</a> |</li>
-        <li><a href="index.html">Neuronvisio 0.8.1 documentation</a> &raquo;</li>
+        <li><a href="index.html">Neuronvisio 0.8.2 documentation</a> &raquo;</li>
           <li><a href="reference.html" accesskey="U">Reference</a> &raquo;</li> 
       </ul>
     </div>
@@ -136,7 +136,7 @@ controls - the main gui obj.</p>
 
 <dl class="method">
 <dt id="neuronvisio.visio.Visio.get_selection_scalar">
-<tt class="descname">get_selection_scalar</tt><big>(</big><em>selected_secs</em><big>)</big><a class="headerlink" href="#neuronvisio.visio.Visio.get_selection_scalar" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_selection_scalar</tt><big>(</big><em>selected_secs</em>, <em>scalar_values=None</em><big>)</big><a class="headerlink" href="#neuronvisio.visio.Visio.get_selection_scalar" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a scalar array with zero everywhere but one 
 for the selected sections</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -179,6 +179,29 @@ var - the name of the variable used</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="neuronvisio.visio.Visio.select_sections">
+<tt class="descname">select_sections</tt><big>(</big><em>secs_list</em>, <em>scalar_values=None</em><big>)</big><a class="headerlink" href="#neuronvisio.visio.Visio.select_sections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a set of sections and color them according to the scalar, 
+if provided.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Param :</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>secs_list = list of the section to color
+scalar_value = array with the color value (must be between 0 and 1)</p>
+<p>The position of the array is used for the secs_list</p>
+<p>Example:
+secs_list = [sec1, sec2]
+scalar_values = [0.5, 1.0]
+sec1 will be coloured with a 0.5 scalar value (middle of the scalar bar), 
+while sec2 will be coloured with 1.0 scalar value (end of the bar).</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="neuronvisio.visio.Visio.show_variable_timecourse">
 <tt class="descname">show_variable_timecourse</tt><big>(</big><em>var</em>, <em>time_point</em>, <em>start_value</em>, <em>end_value</em><big>)</big><a class="headerlink" href="#neuronvisio.visio.Visio.show_variable_timecourse" title="Permalink to this definition">¶</a></dt>
 <dd><p>Show an animation of all the section that have 
@@ -217,13 +240,13 @@ the recorded variable among time</p>
         <li class="right" >
           <a href="manager.html" title="neuronvisio.manager – Manage the map between vectors and sections"
              >previous</a> |</li>
-        <li><a href="index.html">Neuronvisio 0.8.1 documentation</a> &raquo;</li>
+        <li><a href="index.html">Neuronvisio 0.8.2 documentation</a> &raquo;</li>
           <li><a href="reference.html" >Reference</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2009 -2012, Michele Mattioni.
-      Last updated on Mar 19, 2012.
+      Last updated on Apr 23, 2012.
       Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
   </body>
